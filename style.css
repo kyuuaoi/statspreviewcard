@@ -90,7 +90,35 @@ html, body {
     font-size: 10px;
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (max-width:425px) {
+
+    body {
+        text-align: center;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .img-component {
+        order: -1;
+    }
+
+    .text-component {
+        padding: 12% 8%;
+    }
+
+    .status {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .status div {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
 
     body {
         text-align: center;
